@@ -140,13 +140,17 @@ end
 
 def big_shoe_rebounds
   largest_shoe_size = nil 
-  largest_shoe_person = nil 
+  largest_shoe_rebounds = nil 
   game_hash.each do | team, data |
     data.each do | attribute, value |
       if attribute == :players
         value.each do | name, stats |
           if largest_shoe_size == nil
             largest_shoe_size = stats[:shoe]
+            largest_shoe_rebounds = stats[:rebounds]
+          elsif stats[:shoe] > largest_shoe_size
+            largest_shoe_size = stats[:shoe]
+            largest_shoe_rebounds = stats[:rebounds]
           if name == player_name
             player_stat = stats
           end 
