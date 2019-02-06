@@ -1,0 +1,29 @@
+
+[1mFrom:[0m /home/honest-subroutine-5222/advanced-hashes-hashketball-dc-web-career-021819/hashketball.rb @ line 114 Object#player_numbers:
+
+    [1;34m109[0m: [32mdef[0m [1;34mplayer_numbers[0m(team_name)
+    [1;34m110[0m:   numbers = []
+    [1;34m111[0m:   game_hash.each [32mdo[0m | team, data |
+    [1;34m112[0m:     [32mif[0m data[[33m:team_name[0m] == team_name
+    [1;34m113[0m:       data.each [32mdo[0m | attribute, value |
+ => [1;34m114[0m:         binding.pry
+    [1;34m115[0m:         [32mif[0m attribute == [33m:players[0m
+    [1;34m116[0m:           numbers << value[[33m:number[0m]
+    [1;34m117[0m:           binding.pry
+    [1;34m118[0m: 
+    [1;34m119[0m:           
+    [1;34m120[0m:           [1;34m# value.each do | name, stats |[0m
+    [1;34m121[0m:           [1;34m#   if name == player_name[0m
+    [1;34m122[0m:           [1;34m#     points_scored = stats[:points][0m
+    [1;34m123[0m:           [1;34m#   end [0m
+    [1;34m124[0m:           [1;34m# end [0m
+    [1;34m125[0m:           
+    [1;34m126[0m:           
+    [1;34m127[0m:         [32mend[0m 
+    [1;34m128[0m:       [32mend[0m 
+    [1;34m129[0m:     [32mend[0m
+    [1;34m130[0m:     
+    [1;34m131[0m:   [32mend[0m 
+    [1;34m132[0m:   numbers
+    [1;34m133[0m: [32mend[0m 
+
