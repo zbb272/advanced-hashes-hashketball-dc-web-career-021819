@@ -113,19 +113,8 @@ def player_numbers(team_name)
       data.each do | attribute, value |
         if attribute == :players
           value.each do | name, stats |
-            
+            numbers << stats[:number]
           end 
-          numbers << value[:number]
-          binding.pry
-          
-          
-          # value.each do | name, stats |
-          #   if name == player_name
-          #     points_scored = stats[:points]
-          #   end 
-          # end 
-          
-          
         end 
       end 
     end
