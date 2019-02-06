@@ -94,12 +94,6 @@ def team_colors(team_name)
     if data[:team_name] == team_name
       colors = data[:colors]
     end 
-    
-    # data.each do | attribute, value |
-    #   if attribute == :team_name
-    #     colors = data[:colors]
-    #   end 
-    # end 
   end 
   colors
 end 
