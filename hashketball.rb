@@ -151,13 +151,12 @@ def big_shoe_rebounds
           elsif stats[:shoe] > largest_shoe_size
             largest_shoe_size = stats[:shoe]
             largest_shoe_rebounds = stats[:rebounds]
-          if name == player_name
-            player_stat = stats
           end 
         end 
       end 
     end 
   end 
+  largest_shoe_rebounds
 end 
 
 def good_practices
