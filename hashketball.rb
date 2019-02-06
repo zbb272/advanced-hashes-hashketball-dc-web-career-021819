@@ -90,14 +90,14 @@ end
 
 def team_colors(team_name)
   colors = [] 
-  game_hash.each do | key, data |
+  game_hash.each do | team, data |
     data.each do | attribute, value |
-      if attribute == :players
-        value.each do | name, stats |
-          if name == player_name
-            points_scored = stats[:points]
-          end 
-        end 
+      if attribute == :colors
+        # value.each do | name, stats |
+        #   if name == player_name
+        #     points_scored = stats[:points]
+        #   end 
+        # end 
       end 
     end 
   end 
