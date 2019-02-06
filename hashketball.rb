@@ -98,6 +98,7 @@ def team_colors(team_name)
         #     points_scored = stats[:points]
         #   end 
         # end 
+        colors = value 
       end 
     end 
   end 
