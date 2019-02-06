@@ -57,7 +57,18 @@ def game_hash
 end 
 
 def num_points_scored(player_name)
-  
+  points_scored = nil 
+  game_hash.each do | key, data |
+    data.each do | attribute, value |
+      if attribute == :players
+        value.each do | name, stats |
+          if name == player_name
+            points_scored = stats[:points]
+          end 
+        end 
+      end 
+    end 
+  end 
 end 
 
 
