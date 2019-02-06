@@ -60,7 +60,47 @@ def game_hash
       :team_name => "Charlotte Hornets",
       :colors => ["Turquoise", "Purple"],
       :players => {
-        "name" => {
+        "Jeff Adrien" => {
+          :number => ,
+          :shoe => ,
+          :points => ,
+          :rebounds => ,
+          :assists => ,
+          :steals => ,
+          :blocks => ,
+          :slam_dunks => 
+        }
+        "Bismak Biyombo" => {
+          :number => ,
+          :shoe => ,
+          :points => ,
+          :rebounds => ,
+          :assists => ,
+          :steals => ,
+          :blocks => ,
+          :slam_dunks => 
+        }
+        "DeSagna Diop" => {
+          :number => ,
+          :shoe => ,
+          :points => ,
+          :rebounds => ,
+          :assists => ,
+          :steals => ,
+          :blocks => ,
+          :slam_dunks => 
+        }
+        "Ben Gordon" => {
+          :number => ,
+          :shoe => ,
+          :points => ,
+          :rebounds => ,
+          :assists => ,
+          :steals => ,
+          :blocks => ,
+          :slam_dunks => 
+        }
+        "Brendan Haywood" => {
           :number => ,
           :shoe => ,
           :points => ,
