@@ -188,15 +188,10 @@ def winning_team
       if home_team_points == 0
         if attribute == :players
           value.each do | name, stats |
-            if most_points == nil
-              most_points = stats[:points]
-              player_most_points = name 
-            elsif stats[:points] > most_points
-              most_points = stats[:points]
-              player_most_points = name
-            end 
+            home_team_points += stats[:points]
           end 
         end 
+      end 
     end 
   end 
   player_most_points
