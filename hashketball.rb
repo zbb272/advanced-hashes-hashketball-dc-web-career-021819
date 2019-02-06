@@ -111,8 +111,10 @@ def player_numbers(team_name)
   game_hash.each do | team, data |
     if data[:team_name] == team_name
       data.each do | attribute, value |
+        binding.pry
         if attribute == :players
           numbers << value[:number]
+          binding.pry
           
           
           # value.each do | name, stats |
