@@ -177,7 +177,7 @@ def most_points_scored
       end 
     end 
   end 
-  largest_shoe_rebounds
+  player_most_points
 end 
 
 def good_practices
