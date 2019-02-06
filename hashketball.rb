@@ -109,6 +109,17 @@ end
 def player_numbers(team_name)
   numbers = []
   game_hash.each do | team, data |
+    if data[:team_name] == team_name
+      data.each do | attribute, value |
+        if attribute == :players
+          value.each do | name, stats |
+            if name == player_name
+              points_scored = stats[:points]
+            end 
+          end 
+        end 
+      end 
+    end
     
   end 
 end 
