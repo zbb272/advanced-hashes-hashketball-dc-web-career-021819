@@ -120,6 +120,8 @@ def player_numbers(team_name)
           #     points_scored = stats[:points]
           #   end 
           # end 
+          
+          
         end 
       end 
     end
