@@ -39,14 +39,8 @@ def game_hash
           :steals => 7, :blocks => 15, :slam_dunks => 10
         },
         "DeSagna Diop" => {
-          :number => 2,
-          :shoe => 14,
-          :points => 24,
-          :rebounds => 12,
-          :assists => 12,
-          :steals => 4,
-          :blocks => 5,
-          :slam_dunks => 5
+          :number => 2, :shoe => 14, :points => 24, :rebounds => 12, :assists => 12,
+          :steals => 4, :blocks => 5, :slam_dunks => 5
         },
         "Ben Gordon" => {
           :number => 8,
