@@ -103,6 +103,7 @@ def team_names
   game_hash.each do | team, data |
     teams << data[:team_name]
   end 
+  teams
 end 
 
 
