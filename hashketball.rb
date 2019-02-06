@@ -135,7 +135,7 @@ def player_stats(player_name)
       end 
     end 
   end 
-  points_scored
+  player_stat
 end 
 
 def good_practices
