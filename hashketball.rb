@@ -181,7 +181,25 @@ def most_points_scored
 end 
 
 def winning_team
-  
+  home_team_points = 0 
+  away_team_points = 0 
+  game_hash.each do | team, data |
+    data.each do | attribute, value |
+      if home_team_points == 0
+        if attribute == :players
+          value.each do | name, stats |
+            if most_points == nil
+              most_points = stats[:points]
+              player_most_points = name 
+            elsif stats[:points] > most_points
+              most_points = stats[:points]
+              player_most_points = name
+            end 
+          end 
+        end 
+    end 
+  end 
+  player_most_points
 end 
 
 def good_practices
