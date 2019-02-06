@@ -98,6 +98,13 @@ def team_colors(team_name)
   colors
 end 
 
+def team_names
+  teams = []
+  game_hash.each do | team, data |
+    teams << data[:team_name]
+  end 
+end 
+
 
 
 def good_practices
