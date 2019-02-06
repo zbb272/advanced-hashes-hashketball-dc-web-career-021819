@@ -123,7 +123,19 @@ def player_numbers(team_name)
 end 
 
 def player_stats(player_name)
-
+  player_stat = nil 
+  game_hash.each do | team, data |
+    data.each do | attribute, value |
+      if attribute == :players
+        value.each do | name, stats |
+          if name == player_name
+            player_stat = stats
+          end 
+        end 
+      end 
+    end 
+  end 
+  points_scored
 end 
 
 def good_practices
