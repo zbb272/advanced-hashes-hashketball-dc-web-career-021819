@@ -139,7 +139,21 @@ def player_stats(player_name)
 end 
 
 def big_shoe_rebounds
-  
+  largest_shoe_size = nil 
+  largest_shoe_person = nil 
+  game_hash.each do | team, data |
+    data.each do | attribute, value |
+      if attribute == :players
+        value.each do | name, stats |
+          if largest_shoe_size == nil
+            largest_shoe_size = stats[:shoe]
+          if name == player_name
+            player_stat = stats
+          end 
+        end 
+      end 
+    end 
+  end 
 end 
 
 def good_practices
