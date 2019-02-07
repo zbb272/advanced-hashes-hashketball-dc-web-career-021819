@@ -230,3 +230,24 @@ def player_with_longest_name
   player_most_letters
 end 
 
+def long_name_steals_a_ton?
+  most_steals = nil 
+  player_most_steals = nil 
+  game_hash.each do | team, data |
+    data.each do | attribute, value |
+      if attribute == :players
+        value.each do | name, stats |
+          if most_steals == nil
+            most_steals = stats[:steals]
+            player_most_steals = name 
+          elsif stats[:steals] > most_steals
+            most_steals = stats[:steals]
+            player_most_steals = name
+          end 
+        end 
+      end 
+    end 
+  end 
+  player_most_letters
+end 
+
