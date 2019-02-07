@@ -202,7 +202,10 @@ def winning_team
       end
     end 
   end 
-  player_most_points
+  if home_team_points > away_team_points
+    home_team_points
+  else 
+    away_team_points
 end 
 
 def good_practices
