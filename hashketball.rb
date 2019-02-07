@@ -210,23 +210,23 @@ def winning_team
 end 
 
 def player_with_longest_name
-  most_points = nil 
-  player_most_points = nil 
+  most_letters = nil 
+  player_most_letters = nil 
   game_hash.each do | team, data |
     data.each do | attribute, value |
       if attribute == :players
         value.each do | name, stats |
-          if most_points == nil
-            most_points = stats[:points]
-            player_most_points = name 
-          elsif stats[:points] > most_points
-            most_points = stats[:points]
-            player_most_points = name
+          if most_letters == nil
+            most_letters = name.length
+            player_most_letters = name 
+          elsif name.length > most_letters
+            most_letters = name.length
+            player_most_letters = name
           end 
         end 
       end 
     end 
   end 
-  player_most_points
+  player_most_letters
 end 
 
